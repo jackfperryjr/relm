@@ -1,0 +1,162 @@
+.app {
+  text-align: center;
+}
+
+.profile-container {
+  text-align: center;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 700px;
+  height: calc(275px + 1vmin);
+}
+
+.button-container {
+  margin: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-profile {
+  width: 100px;
+}
+
+.profile-photo {
+  height: calc(150px + 10vmin);
+  width: calc(150px + 10vmin);
+  pointer-events: none;
+  margin: -170px 10px 10px 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  pointer-events: all;
+}
+
+.wallpaper-photo {
+  text-align: center;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 700px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#upload-photo,
+#upload-wallpaper {
+  opacity: 0;
+}
+
+.main-photo {
+  height: calc(100px + 10vmin);
+  pointer-events: none;
+  margin: 10px;
+}
+
+.dark-nav {
+  width: 100vw;
+  background-color: transparent;
+  color: #61dafb;
+  font-size: calc(10px + 2vmin);
+  font-weight: 500;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-form {
+  margin: 0 auto;
+  width: calc(100% + 10vmin);
+  max-width: 350px;
+}
+
+.login-username {
+  text-transform: lowercase;
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus  {
+  outline: 0 none;
+  border: 1px solid transparent;
+  border-bottom: 2px solid #007bff;
+  color: #000;
+}
+
+.form-container {
+  padding-top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+}
+
+.login-screen,
+.register-screen {
+  padding-top: 100px;
+}
+
+.link,
+.link:hover,
+.link:focus,
+.link:visited,
+.link:active {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.font-regular {
+  font-size: 16px;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+#login-error,
+#validation-error {
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  color: #c0c;
+  margin: 5% auto 15px auto;
+  width: 200px;
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    height: calc(275px + 6vmin);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .main-photo {
+    animation: photo-spin infinite 10s linear;
+  }
+}
+
+@keyframes photo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
