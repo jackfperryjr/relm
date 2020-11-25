@@ -88,7 +88,7 @@ class Profile extends Component {
     }
   }
 
-  validateForm() {
+  validateForm() { //a test comment for a tag
     let error = 0
 
     if (error === 1) {
